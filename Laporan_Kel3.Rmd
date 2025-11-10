@@ -1,6 +1,6 @@
 ---
-title: \large\bfseries{Kelompok xx Kelas A}
-author: "Dhiyaurahman, Keisyah, Raden"
+title: \large\bfseries{Kelompok 3 Kelas A}
+author: "Dhiyaurrahman Hamizan H. P, Keisyah Zahra A, Raden Muhammad R"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 output:
   pdf_document:
@@ -17,8 +17,8 @@ output:
 lof: true    
 fontsize: 11pt
 geometry: margin=1in
-
 bibliography: references.bib
+csl: apa.csl 
 #nocite: | 
 #  @*
 
@@ -40,17 +40,66 @@ knitr::opts_chunk$set(echo = TRUE)
 
 \newpage
 
-# Judul Proyek
+# Judul Proposal
+Klasifikasi Customer Churn dengan Metode Decision Tree Pada Perusahaan Telecom
 
 ## Latar Belakang Masalah
+Retensi pelanggan (customer retention) merupakan isu krusial dalam industri telekomunikasi karena biaya untuk mendapatkan pelanggan baru (customer acquisition) jauh lebih tinggi daripada mempertahankan pelanggan lama. Fenomena pelanggan yang berhenti menggunakan langganan (customer churn) secara signifikan mengurangi pendapatan perusahaan. Oleh karena itu, kemampuan untuk memprediksi pelanggan mana yang cenderung churn di masa depan menjadi sangat penting untuk mengambil tindakan pencegahan yang tepat dan personal.
+
+Penerapan teknik Data Mining, khususnya klasifikasi, memungkinkan perusahaan untuk membangun model prediksi yang akurat dan 2 mengidentifikasi pola atau kombinasi fitur pelanggan (seperti jenis kontrak, durasi berlangganan, atau biaya bulanan) yang paling memengaruhi churn. Decision Tree dipilih karena kemampuannya dalam menghasilkan model yang mudah diinterpretasikan dan memberikan insight dalam bentuk aturan keputusan yang konkret.
 
 ### Rumusan Masalah dan Tujuan
 
+1. Bagaimana kinertja model Decision Tree dalam mengklasifikasikan pelanggan yang akan churn (Yes/No) pada data pelanggan Telecom?
+
+2. Variabel prediktor apa saja yang paling signifikan memengaruhi customer churn berdasarkan hasil analisis model decision tree
+
 ### Sumber dan Karakteristik Data
 
+Sumber data yang kami gunakan adalah "Telecom Customer Churn Prediction" yang dapat diakses melalui link ini: "https://raw.githubusercontent.com/YBIFoundation/Dataset/main/TelecomCustomerChurn.csv". Dataset ini terdiri dari 20 kolom dan 7043 baris.
+
 ## Metodologi Data Mining
+Proses data mining dalam proyek ini mengikuti pendekatan CRISP-DM (Cross Industry Standard Process for Data Mining), yaitu suatu standar industri yang umum digunakan untuk membangun solusi berbasis data secara sistematis[@singgalen2023penerapan]. Pendekatan ini membantu dalam memahami konteks permasalahan, menyiapkan data yang relevan, serta menerapkan teknik analisis yang tepat agar hasil yang diperoleh dapat memberikan wawasan yang bermanfaat dan dapat diterapkan secara praktis [@yudiana2023prediksi]. Metodologi ini terdiri dari enam tahap utama, yaitu: 
+
+1. Business Understanding : 
+Pada tahap ini, dilakukan pemahaman terhadap permasalahan bisnis yaitu bagaimana perusahaan telekomunikasi dapat mengurangi tingkat churn dengan memanfaatkan data pelanggan. Tujuan bisnisnya adalah mengidentifikasi pelanggan yang memiliki potensi tinggi untuk berhenti berlangganan.
+ 
+2. Data Understanding : 
+Data yang telah dikumpulkan dieksplorasi untuk memahami karakteristiknya. Analisis dilakukan untuk melihat distribusi tiap variabel, pola hubungan antar fitur, serta mengidentifikasi potensi permasalahan seperti nilai hilang atau ketidakseimbangan kelas.
+
+3. Data Preparation : 
+Data kemudian dibersihkan dan dipersiapkan untuk tahap modeling. Langkah ini mencakup pembersihan nilai kosong (missing values), transformasi tipe data kategorikal menjadi faktor, normalisasi variabel numerik bila diperlukan, dan pembagian dataset menjadi data latih (80%) dan data uji (20%).
+
+4. Modeling : 
+Tahap ini menggunakan algoritma Decision Tree (rpart) untuk membangun model prediksi churn. Model akan dilatih menggunakan data training, kemudian diuji performanya menggunakan data testing.
+
+5. Evaluation
+Model yang dihasilkan dievaluasi menggunakan metrik seperti accuracy, precision, recall, dan F1-score untuk mengetahui seberapa baik model dapat memprediksi churn.
+
+6. Deployment : 
+Hasil model akan diinterpretasikan untuk memberikan insight bagi pihak perusahaan, seperti faktor dominan yang menyebabkan pelanggan churn dan kelompok pelanggan yang perlu diprioritaskan untuk retensi.
 
 ## Teknik dan Algoritma yang Digunakan
+Teknik yang digunakan dalam proyek ini adalah klasifikasi dengan algoritma Decision Tree. Metode ini mempartisi data menjadi beberapa subset berdasarkan nilai fitur yang ada, sehingga setiap atribut dapat berkontribusi dalam membentuk pola dan hubungan antar variabel[@siregar2025prediksi]. Dengan memanfaatkan semua fitur, model diharapkan mampu menghasilkan prediksi yang akurat serta menggambarkan karakteristik data secara menyeluruh. Dengan memanfaatkan keseluruhan fitur, model diharapkan mampu menghasilkan prediksi yang lebih akurat dan menggambarkan karakteristik data secara komprehensif.
+
+Keunggulan utama dari algoritma Decision Tree antara lain : 
+
+1. Mampu menghasilkan model yang mudah diinterpretasikan secara visual, karena setiap cabang dan simpul mewakili kondisi atau keputusan tertentu.
+
+2. Dapat menangani data numerik maupun kategorikal secara bersamaan tanpa memerlukan banyak proses normalisasi.
+
+3. Mampu mengidentifikasi fitur yang paling berpengaruh dalam proses klasifikasi, sehingga membantu memahami faktor-faktor utama yang menentukan hasil prediksi.
+
+Implementasi algoritma dilakukan menggunakan bahasa pemrograman R dengan memanfaatkan beberapa library utama, seperti:
+
+1. rpart: digunakan untuk membangun algoritma Decision Tree.
+2. rpart.plot: digunakan untuk mengubah struktur model Decision Tree yang kompleks menjadi grafik pohon visual yang mudah dipahami.
+3. caret: berfungsi untuk membantu proses pelatihan, validasi model, dan evaluasi kinerja menggunakan metrik seperti akurasi, presisi, dan recall.
+4. dplyr: digunakan untuk manipulasi data.
+5. naniar: digunakan untuk penanganan data hilang pada dataset. 
+6. ggplot2: digunakan untuk membuat visualisasi hasil analisis data dan performa model secara informatif.
+
+Selain itu, proses pengujian model dilakukan dengan menerapkan teknik train-test split, di mana data dibagi menjadi dua bagian yaitu data pelatihan (training data) untuk membangun model dan data pengujian (testing data) untuk menilai sejauh mana model dapat melakukan prediksi terhadap data baru. Dengan cara ini, keandalan model dapat dievaluasi secara objektif berdasarkan hasil prediksi yang dihasilkan.
 
 ## Rencana Implementasi
 ### Alat yang Digunakan
@@ -59,8 +108,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Hasil yang Diharapkan dan Dampak
 ### Hasil
 ### Dampak
+ 
+## Daftar Pustaka 
 
-##
 
 \nocite{*}
-   
