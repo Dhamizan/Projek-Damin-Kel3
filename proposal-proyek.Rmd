@@ -1,11 +1,6 @@
 ---
-<<<<<<< HEAD
 title: \large\bfseries{Kelompok 3 Kelas A}
 author: "Dhiyaurrahman Hamizan Haikal Putra, Keisyah Zahra Anatasya, Raden Muhammad Raditya Rahman"
-=======
-title: \large\bfseries{Kelompok xx Kelas A}
-author: "Bayu Widodo"
->>>>>>> 562b3a55b129e15607efefa66339e0e3d16c6797
 date: "`r format(Sys.time(), '%d %B %Y')`"
 output:
   pdf_document:
@@ -46,7 +41,6 @@ knitr::opts_chunk$set(echo = TRUE)
 \newpage
 
 # Judul Proposal
-<<<<<<< HEAD
 Klasifikasi Customer Churn dengan Metode Decision Tree Pada Perusahaan Telecom
 
 # Latar Belakang Masalah
@@ -56,22 +50,10 @@ Keunggulan Decision Tree adalah kemampuannya mengidentifikasi faktor-faktor utam
 
 # Rumusan Masalah dan Tujuan
 ## Rumusan Masalah
-=======
-Prediksi Customer Churn dan Identifikasi Faktor Penentu Menggunakan Algoritma Decision Tree pada Data Pelanggan 
-
-## Latar Belakang Masalah
-Retensi pelanggan (customer retention) merupakan isu krusial dalam industri telekomunikasi karena biaya untuk mendapatkan pelanggan baru (customer acquisition) jauh lebih tinggi daripada mempertahankan pelanggan lama. Fenomena pelanggan yang berhenti menggunakan langganan (customer churn) secara signifikan mengurangi pendapatan perusahaan. Oleh karena itu, kemampuan untuk memprediksi pelanggan mana yang cenderung churn di masa depan menjadi sangat penting untuk mengambil tindakan pencegahan yang tepat dan personal.
-
-Penerapan teknik Data Mining, khususnya klasifikasi, memungkinkan perusahaan untuk membangun model prediksi yang akurat dan 2 mengidentifikasi pola atau kombinasi fitur pelanggan (seperti jenis kontrak, durasi berlangganan, atau biaya bulanan) yang paling memengaruhi churn. Decision Tree dipilih karena kemampuannya dalam menghasilkan model yang mudah diinterpretasikan dan memberikan insight dalam bentuk aturan keputusan yang konkret.
-
-### Rumusan Masalah dan Tujuan
-
->>>>>>> 562b3a55b129e15607efefa66339e0e3d16c6797
 1. Bagaimana kinertja model Decision Tree dalam mengklasifikasikan pelanggan yang akan churn (Yes/No) pada data pelanggan Telecom?
 
 2. Variabel prediktor apa saja yang paling signifikan memengaruhi customer churn berdasarkan hasil analisis model decision tree
 
-<<<<<<< HEAD
 ## Tujuan Masalah
 1. Menganalisis dan mengevaluasi kinerja model Decision Tree dalam memprediksi customer churn pada data pelanggan perusahaan telekomunikasi.
 
@@ -192,25 +174,6 @@ rencana_df %>%
 2. Menyediakan rekomendasi strategis berbasis data bagi perusahaan untuk merancang program retensi yang lebih fokus dan proaktif.
 
 # Daftar Pustaka
-=======
-### Sumber dan Karakteristik Data
-
-Sumber data yang kami gunakan adalah "Telecom Customer Churn Prediction" yang dapat diakses melalui link ini: "https://raw.githubusercontent.com/YBIFoundation/Dataset/main/TelecomCustomerChurn.csv". Dataset ini terdiri dari 20 kolom dan 7043 baris.
-
-## Metodologi Data Mining
-
-## Teknik dan Algoritma yang Digunakan
-
-## Rencana Implementasi
-### Alat yang Digunakan
-### Rencana Implementasi
-
-## Hasil yang Diharapkan dan Dampak
-### Hasil
-### Dampak
-
-##
->>>>>>> 562b3a55b129e15607efefa66339e0e3d16c6797
 
 \nocite{*}
    
