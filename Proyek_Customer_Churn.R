@@ -13,3 +13,6 @@ glimpse(cc_data)
 
 colSums(is.na(cc_data))
 
+row(cc_data)
+summary(cc_data)
+nrow(cc_data)
