@@ -32,6 +32,7 @@
 \bibliographystyle{plainnat}
 
 
+\usepackage{longtable,booktabs}
 \IfFileExists{parskip.sty}{%
 \usepackage{parskip}
 }{% else
@@ -241,18 +242,88 @@ Dataset ini terdiri dari 20 kolom dan 7043 baris.
 \subsection{Teknik dan Algoritma yang
 Digunakan}\label{teknik-dan-algoritma-yang-digunakan}
 
-\subsection{Rencana Implementasi}\label{rencana-implementasi}
+\subsection{Rencana Implementasi dan Alat yang
+Digunakan}\label{rencana-implementasi-dan-alat-yang-digunakan}
+
+\subsubsection{Rencana Implementasi}\label{rencana-implementasi}
+
+Rencana implementasi proyek ini dilakukan melalui tahapan sistematis
+menggunakan lingkungan kerja RStudio. Proses dimulai dari tahap data
+preparation yang mencakup pembersihan data, transformasi tipe variabel,
+dan pembagian dataset menjadi data latih serta data uji. Selanjutnya
+dilakukan pembangunan model klasifikasi dengan algoritma Decision Tree
+(rpart) untuk memprediksi pelanggan yang berpotensi churn. Setelah model
+terbentuk, dilakukan evaluasi performa menggunakan metrik seperti
+akurasi, presisi, dan recall untuk menilai sejauh mana model mampu
+melakukan klasifikasi dengan baik. Hasil model kemudian divisualisasikan
+dalam bentuk pohon keputusan dan grafik analisis fitur guna memberikan
+interpretasi yang mudah dipahami dan relevan bagi pihak perusahaan.
 
 \subsubsection{Alat yang Digunakan}\label{alat-yang-digunakan}
 
-\subsubsection{Rencana Implementasi}\label{rencana-implementasi-1}
+Alat yang digunakan dalam proyek ini adalah bahasa pemrograman R dengan
+dukungan lingkungan RStudio sebagai platform utama pengembangan.
+Beberapa pustaka (library) digunakan untuk mendukung seluruh proses
+analisis, antara lain rpart untuk membangun model Decision Tree, caret
+untuk melakukan validasi dan evaluasi model, ggplot2 untuk visualisasi
+hasil analisis, dplyr untuk manipulasi data, naniar untuk penanganan
+data hilang, serta rpart.plot untuk menampilkan hasil model dalam bentuk
+grafik pohon keputusan. Pemilihan alat ini didasarkan pada kemampuannya
+dalam menangani data kompleks, kemudahan integrasi antar pustaka, serta
+dukungan komunitas yang luas dalam pengembangan analisis berbasis data.
 
 \subsection{Hasil yang Diharapkan dan
 Dampak}\label{hasil-yang-diharapkan-dan-dampak}
 
 \subsubsection{Hasil}\label{hasil}
 
+Hasil yang diharapkan dari proyek ini adalah terbentuknya model prediksi
+churn pelanggan yang mampu mengklasifikasikan pelanggan dengan akurasi
+yang tinggi serta mengidentifikasi faktor-faktor utama yang memengaruhi
+keputusan pelanggan untuk berhenti berlangganan. Dengan menerapkan
+algoritma Decision Tree, model akan memberikan representasi visual
+berupa struktur pohon yang menunjukkan hubungan antar variabel prediktor
+dan variabel respon (Churn). Melalui analisis feature importance dan
+hasil evaluasi model, dapat diperoleh pemahaman mendalam mengenai
+variabel mana yang paling berpengaruh, seperti durasi berlangganan
+(tenure), jenis kontrak, dan biaya bulanan. Visualisasi hasil akan
+disajikan dalam bentuk grafik dan tabel evaluasi untuk mendukung
+interpretasi yang komprehensif.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Komponen
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Deskripsi/Fungsi
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Bahasa Pemrograman & R \\
+Lingkungan Kerja & RStudio \\
+Paket/Library Utama & rpart, caret, ggplot2, dplyr, naniar,
+rpart.plot \\
+Tahapan Implementasi & Pembersihan \& transformasi data → Pembuatan
+model Decision Tree → Evaluasi metrik performa → Visualisasi hasil \\
+\end{longtable}
+
 \subsubsection{Dampak}\label{dampak}
+
+Dampak yang diharapkan dari implementasi proyek ini mencakup peningkatan
+efektivitas strategi bisnis dan retensi pelanggan melalui pendekatan
+berbasis data (data-driven decision making). Dengan mengetahui
+karakteristik pelanggan yang berisiko tinggi untuk churn, perusahaan
+dapat merancang strategi yang lebih tepat sasaran, seperti program
+loyalitas, promosi personalisasi, atau peningkatan layanan pelanggan.
+Selain itu, proyek ini juga memberikan kontribusi akademik dengan
+menunjukkan penerapan nyata algoritma Decision Tree dalam konteks
+industri telekomunikasi, serta memperkuat pemahaman mahasiswa terhadap
+tahapan lengkap proses data mining mulai dari eksplorasi hingga evaluasi
+model.
 
 \subsection{}\label{section}
 
