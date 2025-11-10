@@ -10,4 +10,8 @@ NumSpacesForTab: 2
 Encoding: UTF-8
 
 RnwWeave: Sweave
+<<<<<<< HEAD
 LaTeX: XeLaTeX
+=======
+LaTeX: pdfLaTeX
+>>>>>>> 562b3a55b129e15607efefa66339e0e3d16c6797

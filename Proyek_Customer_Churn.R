@@ -16,7 +16,10 @@ colSums(is.na(cc_data))
 row(cc_data)
 summary(cc_data)
 nrow(cc_data)
+<<<<<<< HEAD
 
 cc_data <- cc_data %>% mutate(
   TotalCharges = ifelse(is.na(TotalCharges), mean(TotalCharges, na.rm = TRUE))
 )
+=======
+>>>>>>> 562b3a55b129e15607efefa66339e0e3d16c6797
