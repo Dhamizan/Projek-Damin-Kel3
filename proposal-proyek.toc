@@ -1,0 +1,16 @@
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {1}Judul Proposal}{2}{section.1}%
+\contentsline {section}{\numberline {2}Latar Belakang Masalah}{2}{section.2}%
+\contentsline {section}{\numberline {3}Rumusan Masalah dan Tujuan}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Rumusan Masalah}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Tujuan Masalah}{2}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Sumber dan Karakteristik Data}{2}{section.4}%
+\contentsline {section}{\numberline {5}Metodologi Data Mining}{3}{section.5}%
+\contentsline {section}{\numberline {6}Teknik dan Algoritma yang Digunakan}{3}{section.6}%
+\contentsline {section}{\numberline {7}Rencana Implementasi dan Alat yang Digunakan}{4}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Alat yang Digunakan}{4}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Rencana Implementasi}{4}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Hasil yang Diharapkan dan Dampak}{5}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Hasil}{5}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Dampak}{5}{subsection.8.2}%
+\contentsline {section}{\numberline {9}Daftar Pustaka}{5}{section.9}%

@@ -1,0 +1,179 @@
+---
+title: \large\bfseries{Kelompok 3 Kelas A}
+author: "Dhiyaurrahman Hamizan Haikal Putra, Keisyah Zahra Anatasya, Raden Muhammad Raditya Rahman"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  pdf_document:
+    citation_package: natbib
+    template: bwHandout.tex
+    includes:
+       in_header: preamble.tex
+    keep_tex: false
+    toc: true
+    toc_depth: 3
+    number_sections: true
+    latex_engine: xelatex
+#lot: true
+lof: true    
+fontsize: 11pt
+geometry: margin=1in
+
+bibliography: references.bib
+#nocite: | 
+#  @*
+
+my_subtitle: "(Proposal)"
+fancy: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=6.5cm]{gambar/vokasi.png}
+\end{figure}
+
+\addtocounter{section}{0}
+\setcounter{page}{1}
+
+\newpage
+
+# Judul Proposal
+Klasifikasi Customer Churn dengan Metode Decision Tree Pada Perusahaan Telecom
+
+# Latar Belakang Masalah
+Tingkat persaingan yang tinggi pada industri telekomunikasi memicu perusahaan untuk fokus pada strategi retensi pelanggan, karena tingkat churn yang tinggi dapat berdampak langsung pada penurunan pendapatan dan keberlanjutan bisnis [@huda2023design]. Prediksi churn secara dini menjadi metode yang sangat penting agar perusahaan dapat mengambil tindakan preventif demi mempertahankan pelanggannya.Model prediksi berbasis data mining, khususnya algoritma Decision Tree, telah terbukti efektif dan akurat dalam mengklasifikasikan pelanggan yang berpotensi churn [@alotaibi2024customer]. 
+
+Keunggulan Decision Tree adalah kemampuannya mengidentifikasi faktor-faktor utama yang memengaruhi keputusan pelanggan (misalnya jenis kontrak dan durasi berlangganan) dan memberikan kemudahan interpretasi visual [@sikri2024enhancing]. Aplikasi Decision Tree secara luas diterapkan untuk prediksi churn di berbagai sektor industri lain, menunjukkan validitas dan fleksibilitas algoritma ini [@kim2022customer]. Penelitian mengenai prediksi churn di Indonesia terus berkembang, dengan studi yang berfokus pada efektivitas Decision Tree dalam konteks data pelanggan lokal [@putriani2024prediksi].
+
+# Rumusan Masalah dan Tujuan
+## Rumusan Masalah
+1. Bagaimana kinertja model Decision Tree dalam mengklasifikasikan pelanggan yang akan churn (Yes/No) pada data pelanggan Telecom?
+
+2. Variabel prediktor apa saja yang paling signifikan memengaruhi customer churn berdasarkan hasil analisis model decision tree
+
+## Tujuan Masalah
+1. Menganalisis dan mengevaluasi kinerja model Decision Tree dalam memprediksi customer churn pada data pelanggan perusahaan telekomunikasi.
+
+2. Mengidentifikasi variabel-variabel kunci yang memiliki pengaruh paling signifikan terhadap keputusan pelanggan untuk churn.
+
+# Sumber dan Karakteristik Data
+
+Sumber data yang kami gunakan adalah "Telecom Customer Churn Prediction" yang dapat diakses melalui link ini: "https://raw.githubusercontent.com/YBIFoundation/Dataset/main/TelecomCustomerChurn.csv". Dataset ini terdiri dari 20 kolom dan 7043 baris.
+
+# Metodologi Data Mining
+Proses data mining dalam proyek ini mengikuti pendekatan CRISP-DM (Cross Industry Standard Process for Data Mining), yaitu suatu standar industri yang umum digunakan untuk membangun solusi berbasis data secara sistematis[@singgalen2023penerapan]. Pendekatan ini membantu dalam memahami konteks permasalahan, menyiapkan data yang relevan, serta menerapkan teknik analisis yang tepat agar hasil yang diperoleh dapat memberikan wawasan yang bermanfaat dan dapat diterapkan secara praktis [@yudiana2023prediksi]. Metodologi ini terdiri dari enam tahap utama, yaitu: 
+
+1. Business Understanding : 
+Pada tahap ini, dilakukan pemahaman terhadap permasalahan bisnis yaitu bagaimana perusahaan telekomunikasi dapat mengurangi tingkat churn dengan memanfaatkan data pelanggan. Tujuan bisnisnya adalah mengidentifikasi pelanggan yang memiliki potensi tinggi untuk berhenti berlangganan.
+ 
+2. Data Understanding : 
+Data yang telah dikumpulkan dieksplorasi untuk memahami karakteristiknya. Analisis dilakukan untuk melihat distribusi tiap variabel, pola hubungan antar fitur, serta mengidentifikasi potensi permasalahan seperti nilai hilang atau ketidakseimbangan kelas.
+
+3. Data Preparation : 
+Data kemudian dibersihkan dan dipersiapkan untuk tahap modeling. Langkah ini mencakup pembersihan nilai kosong (missing values), transformasi tipe data kategorikal menjadi faktor, normalisasi variabel numerik bila diperlukan, dan pembagian dataset menjadi data latih (80%) dan data uji (20%).
+
+4. Modeling : 
+Tahap ini menggunakan algoritma Decision Tree (rpart) untuk membangun model prediksi churn. Model akan dilatih menggunakan data training, kemudian diuji performanya menggunakan data testing.
+
+5. Evaluation :
+Model yang dihasilkan dievaluasi menggunakan metrik seperti accuracy, precision, recall, dan F1-score untuk mengetahui seberapa baik model dapat memprediksi churn.
+
+6. Deployment : 
+Hasil model akan diinterpretasikan untuk memberikan insight bagi pihak perusahaan, seperti faktor dominan yang menyebabkan pelanggan churn dan kelompok pelanggan yang perlu diprioritaskan untuk retensi.
+
+# Teknik dan Algoritma yang Digunakan
+Teknik yang digunakan dalam proyek ini adalah klasifikasi dengan algoritma Decision Tree. Metode ini mempartisi data menjadi beberapa subset berdasarkan nilai fitur yang ada, sehingga setiap atribut dapat berkontribusi dalam membentuk pola dan hubungan antar variabel[@siregar2025prediksi]. Penerapan Decision Tree dalam klasifikasi pelanggan secara luas diakui efektivitasnya dalam membentuk model prediksi yang logis dan terstruktur [@sinata2025klasifikasi]. Keunggulan Decision Tree antara lain mampu menghasilkan model yang mudah diinterpretasikan, menangani data numerik/kategorikal, dan mampu mengidentifikasi fitur yang paling berpengaruh. Selain itu, Decision Tree juga sering digunakan sebagai metode utama untuk dievaluasi kinerjanya dibandingkan dengan model klasifikasi lain (seperti Regresi Logistik) dalam konteks prediksi churn pada industri logistik [@salsabila2021klasifikasi].     Dengan memanfaatkan semua fitur, model diharapkan mampu menghasilkan prediksi yang akurat serta menggambarkan karakteristik data secara menyeluruh. Dengan memanfaatkan keseluruhan fitur, model diharapkan mampu menghasilkan prediksi yang lebih akurat dan menggambarkan karakteristik data secara komprehensif.
+
+Keunggulan utama dari algoritma Decision Tree antara lain : 
+
+1. Mampu menghasilkan model yang mudah diinterpretasikan secara visual, karena setiap cabang dan simpul mewakili kondisi atau keputusan tertentu.
+
+2. Dapat menangani data numerik maupun kategorikal secara bersamaan tanpa memerlukan banyak proses normalisasi.
+
+3. Mampu mengidentifikasi fitur yang paling berpengaruh dalam proses klasifikasi, sehingga membantu memahami faktor-faktor utama yang menentukan hasil prediksi.
+
+Implementasi algoritma dilakukan menggunakan bahasa pemrograman R dengan memanfaatkan beberapa library utama, seperti:
+
+1. rpart: digunakan untuk membangun algoritma Decision Tree.
+2. rpart.plot: digunakan untuk mengubah struktur model Decision Tree yang kompleks menjadi grafik pohon visual yang mudah dipahami.
+3. caret: berfungsi untuk membantu proses pelatihan, validasi model, dan evaluasi kinerja menggunakan metrik seperti akurasi, presisi, dan recall.
+4. dplyr: digunakan untuk manipulasi data.
+5. naniar: digunakan untuk penanganan data hilang pada dataset. 
+6. ggplot2: digunakan untuk membuat visualisasi hasil analisis data dan performa model secara informatif.
+
+Selain itu, proses pengujian model dilakukan dengan menerapkan teknik train-test split, di mana data dibagi menjadi dua bagian yaitu data pelatihan (training data) untuk membangun model dan data pengujian (testing data) untuk menilai sejauh mana model dapat melakukan prediksi terhadap data baru. Dengan cara ini, keandalan model dapat dievaluasi secara objektif berdasarkan hasil prediksi yang dihasilkan.
+
+# Rencana Implementasi dan Alat yang Digunakan
+## Alat yang Digunakan
+1. Perangkat Keras: Laptop DELL Precision 3520
+2. Perangkat Lunak: 
+    - Bahasa Pemrograman: R
+    - Lingkungan Pengembangan: RStudio
+    - Library: dplyr, rpart, rpart.plot, caret, naniar, ggplot2
+
+## Rencana Implementasi
+
+Rencana implementasi proyek ini akan dilaksanakan selama satu minggu (7 hari), dimulai pada 10 November. Tahap awal dimulai dengan Business Understanding pada 10 Nov 2025, diikuti Data Understanding pada 11 Nov 2025. Selanjutnya, pada tanggal 12 Nov 2025 didedikasikan untuk Data Preparation. Selanjutnya, Modeling dilakukan pada tanggal 13 Nov 2025. Evaluation dilaksanakan pada tanggal 14 Nov. Dua hari terakhir, pada tanggal 15–16 Nov 2025, dialokasikan untuk tahapan Deployment, yaitu interpretasi hasil untuk dampak bisnis dan finalisasi dokumen laporan.
+
+\vspace{1.5cm}
+
+```{r rencana-implementasi, echo=FALSE, message=FALSE, warning=FALSE}
+library(knitr)
+library(dplyr)
+library(kableExtra)
+
+# Data frame (diulang untuk konteks)
+rencana_df <- data.frame(
+  Hari = c("10 Nov 2025", "11 Nov 2025", "12 Nov 2025", "13 Nov 2025", "14 Nov 2025", "15-16 Nov 2025"),
+  Tahap_CRISP_DM = c("Business Understanding", "Data Understanding", "Data Preparation", "Modeling", "Evaluation", "Deployment"),
+  Aktivitas_Utama = c(
+    "Akuisisi Data, Eksplorasi Data Awal (EDA), dan Data Cleaning (penanganan missing values).", 
+    "Pra-pemrosesan Data: Encoding Data Kategorikal, Normalisasi (jika perlu), dan Pembagian Train/Test (80:20).",
+    "Implementasi Model Decision Tree pada data latih dan Uji performa awal model pada data uji.", 
+    "Visualisasi Pohon Keputusan (rpart.plot) dan Analisis Variabel Prediktor Kunci (Feature Importance).", 
+    "Hitung metrik evaluasi final (Accuracy, Precision, Recall, F1-Score) dan mulai penulisan bab hasil/analisis model.",
+    "Penyusunan final laporan, interpretasi hasil untuk dampak bisnis, dan finalisasi dokumen proposal/laporan."
+    ),
+  stringsAsFactors = FALSE
+)
+
+# KODE WRAP TEXT YANG BENAR (Parameter 'align' Dihapus dari column_spec)
+rencana_df %>%
+  kable(
+    caption = "Rencana Implementasi Proyek (Periode 1 Minggu)",
+    col.names = c("Tanggal", "Tahap CRISP-DM", "Aktivitas"),
+    align = c("c", "l", "l"), # Perataan diserahkan ke kable()
+    format = "latex", # Output PDF/LaTeX
+    booktabs = TRUE,
+    linesep = ""
+  ) %>%
+  kable_styling(
+    latex_options = c("striped", "scale_down"), 
+    full_width = FALSE
+  ) %>%
+  # column_spec hanya berisi 'width' untuk memaksa wrap text
+  column_spec(1, width = "2cm") %>% # Kolom 1
+  column_spec(2, width = "3cm") %>% # Kolom 2: Wrap text
+  column_spec(3, width = "11cm") # Kolom 3: Wrap text
+```
+
+# Hasil yang Diharapkan dan Dampak
+## Hasil
+1. Model Klasifikasi: Model Decision Tree yang mampu memprediksi customer churn dengan kinerja terukur.
+
+2. Laporan Kinerja: Grafik visualisasi model Decision Tree dan hasil evaluasi metrik (Accuracy, Precision, Recall, F1-Score).
+
+3. Pengetahuan Bisnis: Identifikasi variabel-variabel dominan penyebab churn yang dapat divisualisasikan.
+
+## Dampak
+1. Memberikan studi kasus nyata aplikasi Decision Tree yang didukung dengan metodologi terstruktur.
+
+2. Menyediakan rekomendasi strategis berbasis data bagi perusahaan untuk merancang program retensi yang lebih fokus dan proaktif.
+
+# Daftar Pustaka
+
+\nocite{*}
+   

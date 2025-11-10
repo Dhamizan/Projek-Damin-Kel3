@@ -1,0 +1,106 @@
+@article{huda2023design,
+  title={Design of prediction model using data mining for segmentation and classification customer churn in e-commerce Mall in Mall},
+  author={Huda, Ilham and Suhendra, Agus Achmad and Bijaksana, Moch Arif},
+  journal={JOIV: International Journal on Informatics Visualization},
+  volume={7},
+  number={4},
+  pages={2280--2289},
+  year={2023}
+}
+
+@article{alotaibi2024customer,
+  title={Customer churn prediction for telecommunication companies using machine learning and ensemble methods},
+  author={Alotaibi, Muteb Zarraq and Haq, Mohd Anul},
+  journal={Engineering, Technology \& Applied Science Research},
+  volume={14},
+  number={3},
+  pages={14572--14578},
+  year={2024}
+}
+
+@article{sikri2024enhancing,
+  title={Enhancing customer retention in telecom industry with machine learning driven churn prediction},
+  author={Sikri, Alisha and Jameel, Roshan and Idrees, Sheikh Mohammad and Kaur, Harleen},
+  journal={Scientific Reports},
+  volume={14},
+  number={1},
+  pages={13097},
+  year={2024},
+  publisher={Nature Publishing Group UK London}
+}
+
+@inproceedings{putriani2024prediksi,
+  title={Prediksi Customer Churn Menggunakan Algoritma Decision Tree},
+  author={Putriani, Dewi and Prayogi, Anindita Puspa Ayu and Shofyana, Altha Inas and Ristyawan, Aidina and Daniati, Erna},
+  booktitle={Prosiding SEMNAS INOTEK (Seminar Nasional Inovasi Teknologi)},
+  volume={8},
+  number={1},
+  pages={85--94},
+  year={2024}
+}
+
+@article{singgalen2023penerapan,
+  title={Penerapan CRISP-DM dalam Klasifikasi Sentimen dan Analisis Perilaku Pembelian Layanan Akomodasi Hotel Berbasis Algoritma Decision Tree (DT)},
+  author={Singgalen, Yerik Afrianto},
+  journal={J. Sist. Komput. dan Inform. Hal},
+  volume={237},
+  pages={248},
+  year={2023}
+}
+
+@article{yudiana2023prediksi,
+  title={Prediksi Customer Churn Menggunakan Metode CRISP-DM Pada Industri Telekomunikasi Sebagai Implementasi Mempertahankan Pelanggan},
+  author={Yudiana, Yudi and Agustina, Asiroch Yulia and Khofifah, Nur and others},
+  journal={Indonesian Journal of Islamic Economics and Business},
+  volume={8},
+  number={1},
+  pages={1--20},
+  year={2023}
+}
+
+@article{siregar2025prediksi,
+  title={PREDIKSI CUSTOMER CHURN PADA LAYANAN INDIHOME MENGGUNAKAN ALGORITMA DECISION TREE (STUDI KASUS PT. TELKOM AKSES)},
+  author={Siregar, Andree Rizky Yuliansyah and Iqbal, Muhammad},
+  journal={JOURNAL OF SCIENCE AND SOCIAL RESEARCH},
+  volume={8},
+  number={1},
+  pages={204--211},
+  year={2025}
+}
+
+@article{sinata2025klasifikasi,
+  title={KLASIFIKASI PELANGGAN PADA CUSTOMER CHURN PREDICTION MODELS MENGGUNAKAN DECISION TREE},
+  author={Sinata, Frans and Thenata, Angelina Pramana and Wijaya, Agustinus Fritz and Suryantara, I Gusti Ngurah and Ginting, Jusia Amanda and Widyaningrum, Destriana and Lumba, Ester},
+  journal={Jurnal Algoritma, Logika dan Komputasi},
+  volume={8},
+  number={2},
+  year={2025}
+}
+
+@phdthesis{salsabila2021klasifikasi,
+  title={Klasifikasi Churn Pelanggan Pada Perusahaan Industri Logistik Dengan Metode Decision Tree, Logistic Regression Dan Logit Leaf Model},
+  author={Salsabila, Renada Aulia},
+  year={2021},
+  school={Institut Teknologi Sepuluh Nopember}
+}
+
+@article{imron2025implementasi,
+  title={Implementasi Model Prediksi Churn Pelanggan Menggunakan Algoritma Random Forest Pada Website Industri Telekomunikasi},
+  author={Imron, Mohamad and others},
+  journal={Algorithm: Jurnal Teknologi Informasi},
+  volume={1},
+  number={01},
+  pages={12--25},
+  year={2025}
+}
+
+@article{kim2022customer,
+  title={Customer churn prediction in influencer commerce: An application of decision trees},
+  author={Kim, Sulim and Lee, Heeseok},
+  journal={Procedia Computer Science},
+  volume={199},
+  number={2},
+  pages={1332--1339},
+  year={2022},
+  publisher={Elsevier}
+}
