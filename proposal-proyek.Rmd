@@ -61,7 +61,55 @@ Keunggulan Decision Tree adalah kemampuannya mengidentifikasi faktor-faktor utam
 
 # Sumber dan Karakteristik Data
 
-Sumber data yang kami gunakan adalah "Telecom Customer Churn Prediction" yang dapat diakses melalui link ini: "https://raw.githubusercontent.com/YBIFoundation/Dataset/main/TelecomCustomerChurn.csv". Dataset ini terdiri dari 20 kolom dan 7043 baris.
+Sumber data yang kami gunakan adalah "Telecom Customer Churn Prediction" yang dapat diakses melalui link ini: "https://raw.githubusercontent.com/YBIFoundation/Dataset/main/TelecomCustomerChurn.csv". Dataset ini terdiri dari 21 kolom dan 7043 baris. Variabel dari dataset ini terdiri dari:
+
+1. customerID: ID unik pelanggan.
+
+2. Gender: Jenis kelamin pelanggan.
+
+3. SeniorCitizen: Status warga senior (1 = Ya, 0 = Tidak).
+
+4. Partner: Status memiliki pasangan (Yes/No).
+
+5. Dependents: Status memiliki tanggungan (Yes/No).
+
+6. Tenure: Durasi pelanggan berlangganan (dalam bulan).
+
+7. PhoneService: Status memiliki layanan telepon (Yes/No).
+
+8. MultipleLines: Status memiliki beberapa saluran telepon (Yes/No/No phone service).
+
+9. InternetService: Jenis layanan internet (DSL/Fiber optic/No).
+
+10. OnlineSecurity: Layanan keamanan online (Yes/No/No internet service).
+
+11. OnlineBackup: Layanan backup online (Yes/No/No internet service).
+
+12. DeviceProtection: Layanan perlindungan perangkat (Yes/No/No internet service).
+
+13. TechSupport: Layanan dukungan teknis (Yes/No/No internet service).
+
+14. StreamingTV: Layanan streaming TV (Yes/No/No internet service).
+
+15. StreamingMovies: Layanan streaming film (Yes/No/No internet service).
+
+16. Contract: Tipe kontrak pelanggan (Month-to-month, One year, Two year).
+
+17. PaperlessBilling: Penggunaan tagihan tanpa kertas (Yes/No).
+
+18. PaymentMethod: Metode pembayaran yang digunakan.
+
+19. MonthlyCharges: Biaya yang ditagihkan per bulan (numerik).
+
+20. TotalCharges: Total biaya yang telah ditagihkan.
+
+21. Churn: Status pelanggan berhenti berlangganan (Yes) atau tidak (No).
+
+Dalam hal ini, variabel "Churn" akan menjadi variabel target (respons). Berdasarkan analisis awal data, kelengkapan data sangat baik, namun ada potensi isu yang akan ditangani pada tahap data preparation:
+
+1. Isu Tipe Data: Kolom TotalCharges saat ini terdapat missing values yang perlu ditangani terlebih dahulu.
+
+2. Ketidakseimbangan Kelas (Imbalance): Akan dilakukan analisis untuk melihat potensi ketidakseimbangan kelas pada variabel target (Churn) dan penanganannya bila diperlukan.
 
 # Metodologi Data Mining
 Proses data mining dalam proyek ini mengikuti pendekatan CRISP-DM (Cross Industry Standard Process for Data Mining), yaitu suatu standar industri yang umum digunakan untuk membangun solusi berbasis data secara sistematis[@singgalen2023penerapan]. Pendekatan ini membantu dalam memahami konteks permasalahan, menyiapkan data yang relevan, serta menerapkan teknik analisis yang tepat agar hasil yang diperoleh dapat memberikan wawasan yang bermanfaat dan dapat diterapkan secara praktis [@yudiana2023prediksi]. Metodologi ini terdiri dari enam tahap utama, yaitu: 
@@ -118,8 +166,6 @@ Selain itu, proses pengujian model dilakukan dengan menerapkan teknik train-test
 
 Rencana implementasi proyek ini akan dilaksanakan selama satu minggu (7 hari), dimulai pada 10 November. Tahap awal dimulai dengan Business Understanding pada 10 Nov 2025, diikuti Data Understanding pada 11 Nov 2025. Selanjutnya, pada tanggal 12 Nov 2025 didedikasikan untuk Data Preparation. Selanjutnya, Modeling dilakukan pada tanggal 13 Nov 2025. Evaluation dilaksanakan pada tanggal 14 Nov. Dua hari terakhir, pada tanggal 15–16 Nov 2025, dialokasikan untuk tahapan Deployment, yaitu interpretasi hasil untuk dampak bisnis dan finalisasi dokumen laporan.
 
-\vspace{1.5cm}
-
 ```{r rencana-implementasi, echo=FALSE, message=FALSE, warning=FALSE}
 library(knitr)
 library(dplyr)
@@ -151,7 +197,7 @@ rencana_df %>%
     linesep = ""
   ) %>%
   kable_styling(
-    latex_options = c("striped", "scale_down"), 
+    latex_options = c("striped", "scale_down", "hold_position"), 
     full_width = FALSE
   ) %>%
   # column_spec hanya berisi 'width' untuk memaksa wrap text

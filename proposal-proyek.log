@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.11)  11 NOV 2025 00:28
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.11)  11 NOV 2025 20:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -312,7 +312,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count326
 ) (c:/Users/Dio/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2025/10/22 v25.14 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+Package: babel 2025/11/09 v25.15 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count327
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2050.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2052.
@@ -328,7 +328,7 @@ LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) o
 \bbl@dirlevel=\count328
 (c:/Users/Dio/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/locale/id/babel-indonesian.tex)
 Package babel Info: Importing font and identification data for indonesian
-(babel)             from babel-id.ini. Reported on input line 4295.
+(babel)             from babel-id.ini. Reported on input line 4298.
 (c:/Users/Dio/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel-indonesian/indonesian.ldf
 Language: indonesian 2025/06/01 v1.0n Bahasa Indonesia support from the babel system
 
@@ -1331,13 +1331,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [1
 
 ]
-Underfull \hbox (badness 2165) in paragraph at lines 266--270
-\T1/lmss/m/n/10.95 Sumber da-ta yang ka-mi gu-nakan adalah ``Tele-com Cus-tomer Churn Pre-dic-tion'' yang da-p-
+Underfull \hbox (badness 1577) in paragraph at lines 266--271
+\T1/lmss/m/n/10.95 Sumber da-ta yang ka-mi gu-nakan adalah ``Tele-com Cus-tomer Churn Pre-dic-tion'' yang da-p-at
  []
 
 
-Underfull \hbox (badness 2512) in paragraph at lines 266--270
-\T1/lmss/m/n/10.95 at di-ak-ses melalui link ini: ``[]$https : / / raw . githubusercontent . com / YBIFoundation / Dataset / main /
+Underfull \hbox (badness 10000) in paragraph at lines 266--271
+\T1/lmss/m/n/10.95 di-ak-ses melalui link ini: ``[]$https : / / raw . githubusercontent . com / YBIFoundation / Dataset / main /
  []
 
 
@@ -1356,7 +1356,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.0pt}.
 
 [3]
-LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 404.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.0pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.0pt}.
+
+[4]
+LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 468.
 (c:/Users/Dio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmss.fd
 File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1367,7 +1375,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.0pt}.
 
-[4] (./proposal-proyek.bbl
+[5] (./proposal-proyek.bbl
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 11.
 
@@ -1377,7 +1385,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.0pt}.
 
-[5])
+[6])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.0pt, for example:
@@ -1385,7 +1393,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.0pt}.
 
-[6] (./proposal-proyek.aux)
+[7] (./proposal-proyek.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-10-24>
@@ -1394,12 +1402,12 @@ Package rerunfilecheck Info: File `proposal-proyek.out' has not changed.
 (rerunfilecheck)             Checksum: EAEA0D048CFF688126463B5971818BE2;2410.
  ) 
 Here is how much of TeX's memory you used:
- 46568 strings out of 470195
- 1047893 string characters out of 5477367
- 1562257 words of memory out of 5000000
- 74410 multiletter control sequences out of 15000+600000
+ 46571 strings out of 470195
+ 1047934 string characters out of 5477367
+ 1562329 words of memory out of 5000000
+ 74413 multiletter control sequences out of 15000+600000
  668999 words of font info for 71 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  108i,12n,117p,1613b,649s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on proposal-proyek.pdf (6 pages).
+Output written on proposal-proyek.pdf (7 pages).

@@ -1,0 +1,116 @@
+---
+title: "PROPOSAL DATA MINING"
+subtitle: "Klasifikasi Customer Churn dengan Metode Decision Tree Pada Perusahaan Telecom."
+author: "Kelompok 3"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output: 
+  powerpoint_presentation:
+    reference_doc: "bg_biru.pptx"
+---
+
+# 💡 Judul dan Anggota Kelompok
+
+## Klasifikasi Customer Churn
+
+* **Judul Proposal:** Klasifikasi Customer Churn dengan Metode Decision Tree Pada Perusahaan Telecom.
+* **Anggota Kelompok:** Dhiyaurrahman Hamizan Haikal Putra, Keisyah Zahra Anatasya, Raden Muhammad Raditya Rahman.
+* **Output yang Diharapkan:** Model prediksi yang dapat mengidentifikasi pelanggan berpotensi *churn* secara dini.
+
+---
+
+# 🧐 Latar Belakang Masalah
+
+## Mengapa Klasifikasi Churn Penting?
+
+* **Tingkat Persaingan Tinggi:** Industri telekomunikasi memerlukan fokus pada strategi retensi pelanggan.
+* **Dampak Bisnis:** Tingkat *churn* yang tinggi berdampak langsung pada penurunan pendapatan.
+* **Keunggulan Decision Tree:** Algoritma efektif dan akurat, serta mudah diinterpretasikan secara visual untuk mengidentifikasi faktor pemicu *churn*.
+
+---
+
+# 🎯 Rumusan Masalah & Tujuan
+
+## Rumusan Masalah
+
+1.  Bagaimana kinerja model Decision Tree dalam mengklasifikasikan pelanggan yang akan *churn* ($Yes/No$)?
+2.  Variabel prediktor apa saja yang paling signifikan memengaruhi *customer churn*?
+
+## Tujuan Proyek
+
+1.  Menganalisis dan mengevaluasi kinerja model Decision Tree.
+2.  Mengidentifikasi variabel-variabel kunci (misalnya Kontrak, Durasi Berlangganan) yang memiliki pengaruh signifikan terhadap keputusan pelanggan untuk *churn*.
+
+---
+
+# 📊 Sumber dan Karakteristik Data
+
+## Dataset Telecom Customer Churn Prediction
+
+* **Sumber:** Data YBIFoundation dari GitHub.
+* **Ukuran Data:** 21 kolom dan 7043 baris.
+* **Variabel Target (Respons):** Kolom **Churn** ($Yes/No$).
+* **Contoh Fitur:** `Tenure`, `Contract`, `InternetService`, `MonthlyCharges`, dll.
+
+## Isu Potensial
+
+* **Missing Values:** Kolom `TotalCharges` saat ini memiliki nilai yang hilang.
+* **Imbalance Kelas:** Potensi ketidakseimbangan kelas pada variabel target `Churn` perlu dianalisis.
+
+---
+
+# ⚙️ Metodologi Data Mining (CRISP-DM)
+
+Proses proyek mengikuti standar industri **CRISP-DM**.
+
+1.  **Business Understanding:** Mengidentifikasi pelanggan berpotensi *churn* untuk mengurangi kerugian.
+2.  **Data Understanding:** Eksplorasi data, identifikasi pola, nilai hilang, dan ketidakseimbangan kelas.
+3.  **Data Preparation:** Pembersihan *missing values* (`TotalCharges`), transformasi data kategorikal, dan pembagian *Train/Test* (80:20).
+4.  **Modeling:** Implementasi algoritma Decision Tree (`rpart`).
+5.  **Evaluation:** Pengujian model menggunakan metrik ($Accuracy, Precision, Recall, F1-score$).
+6.  **Deployment:** Interpretasi hasil untuk rekomendasi strategi retensi.
+
+---
+
+# 🌳 Teknik & Algoritma: Decision Tree
+
+## Keunggulan Metode Decision Tree
+
+* **Interpretasi Visual:** Model yang dihasilkan mudah dipahami karena setiap cabang adalah aturan keputusan.
+* **Fleksibel:** Mampu menangani data numerik maupun kategorikal secara bersamaan.
+* **Feature Importance:** Efektif mengidentifikasi fitur yang paling berpengaruh terhadap *churn*.
+
+## Alat dan Library R
+
+* **Algoritma:** `rpart` dan `rpart.plot`.
+* **Evaluasi:** `caret`.
+* **Data Prep:** `dplyr` dan `naniar`.
+* **Visualisasi:** `ggplot2`.
+
+---
+
+# 📅 Rencana Implementasi
+
+## Periode: 7 Hari (Mulai 10 November 2025)
+
+| Tanggal | Tahap CRISP-DM | Aktivitas Kunci |
+| :--- | :--- | :--- |
+| **10 Nov** | Business Understanding | Akuisisi Data, Eksplorasi Data Awal, Data Cleaning. |
+| **11-12 Nov** | Data Preparation | Pra-pemrosesan Data, Encoding, Pembagian *Train/Test*. |
+| **13 Nov** | Modeling | Implementasi Model Decision Tree dan Uji performa awal. |
+| **14 Nov** | Evaluation | Hitung metrik evaluasi final (*Accuracy, Precision, Recall, F1-Score*). |
+| **15-16 Nov** | Deployment | Finalisasi laporan dan interpretasi hasil untuk dampak bisnis. |
+
+---
+
+# 🏆 Hasil dan Dampak yang Diharapkan
+
+## Hasil
+
+* **Model Klasifikasi:** Decision Tree yang mampu memprediksi *customer churn* dengan kinerja terukur.
+* **Laporan Kinerja:** Grafik visualisasi model dan evaluasi metrik.
+* **Pengetahuan Bisnis:** Identifikasi variabel dominan penyebab *churn*.
+
+## Dampak
+
+* **Studi Kasus:** Memberikan studi kasus nyata aplikasi Decision Tree.
+* **Rekomendasi Strategis:** Menyediakan rekomendasi berbasis data bagi perusahaan untuk merancang program retensi yang lebih fokus dan proaktif.
